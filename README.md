@@ -2,4 +2,4 @@
 
 This book contains my notes for web development, including learning notes, project notes, etc.
 
-![image courtesy of facebook](images/facebook_map.jpg)
+![Image courtesy of facebook](facebook_map.jpg)
