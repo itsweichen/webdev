@@ -1,4 +1,4 @@
 # Summary
 
-* [Projects](chapter1.md)
+* [Projects](projects.md)
   * [ConsensUs](projects/consensus.md)
