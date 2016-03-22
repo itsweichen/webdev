@@ -27,8 +27,8 @@ The value of `this` (p.31)
 
 ## Collection
 - shared between all users
-
-`Posts = new Meteor.Collection('posts');` in `collections` directory for both client and server access.
+  
+  `Posts = new Meteor.Collection('posts');` in `collections` directory for both client and server access.
 
 - not using `var`: In Meteor, the `var` keyword limits the scope of an object to the current file. We want to make the `Posts` collection available to our whole app, which is why we're omitting that keyword here.
 
@@ -38,12 +38,14 @@ The value of `this` (p.31)
 	- documents stored in browser memory (`Posts.find` can be accessed instantly)
 
 > Introducing MiniMongo
-Meteor's client-side Mongo implementation is called MiniMongo. It's not a perfect implementation yet, and you may encounter occasional Mongo features that don't work in MiniMongo. Nevertheless, all the features we cover in this book work similarly in both Mongo and MiniMongo.
+> 
+> Meteor's client-side Mongo implementation is called MiniMongo. It's not a perfect implementation yet, and you may encounter occasional Mongo features that don't work in MiniMongo. Nevertheless, all the features we cover in this book work similarly in both Mongo and MiniMongo.
 
 ### Wiring data in helpers
 > Find & Fetch
-In Meteor, `find()` returns a cursor, which is a [reactive data source](http://docs.meteor.com/#/full/find). When we want to log its contents, we can then use `fetch()` on that cursor to transform it into an array.
-
+> 
+> In Meteor, `find()` returns a cursor, which is a [reactive data source](http://docs.meteor.com/#/full/find). When we want to log its contents, we can then use `fetch()` on that cursor to transform it into an array.
+> 
 > Within an app, Meteor is smart enough to know how to iterate over cursors without having to explicitly convert them into arrays first. This is why you won't see fetch() that o en in actual Meteor code (and why we didn't use it in the above example).
 
 ### Publications and Subscriptions
@@ -86,7 +88,7 @@ Meteor.subscribe('posts', 'bob-smith');
 ```javascript
 // on the client
 Template.posts.helpers({ posts: function(){
-return Posts.find(author: 'bob-smith', category: 'JavaScript'); }
+    return Posts.find(author: 'bob-smith', category: 'JavaScript'); }
 });
 ```
 
