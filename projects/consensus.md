@@ -10,12 +10,14 @@
 ### Customize User Account
 - [second meteor tutorial](http://meteortips.com/second-meteor-tutorial/user-accounts/)
 
-## Project list
+## Decision list
 - Card Layout using CSS Flex
   - [result](http://codepen.io/weicliu/pen/oxZVVO)
   - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ([Chinese version](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html))
 - [CSS Center: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
+### New decision
+- [Bootstrap Modal](http://www.w3schools.com/bootstrap/bootstrap_modal.asp)
 
 ## Routing
 - [Iron Router Guide](http://iron-meteor.github.io/iron-router)
