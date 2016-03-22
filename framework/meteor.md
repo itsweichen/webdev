@@ -3,8 +3,6 @@
 
 Notes from `Discover Meteor`
 
-<!-- toc -->
-
 ## Intro
 
 Directories
