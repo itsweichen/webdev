@@ -8,7 +8,7 @@
   - [signin template](https://getbootstrap.com/examples/signin/)
 
 ### Customize User Account
-- [tutorial](http://meteortips.com/second-meteor-tutorial/user-accounts/)
+- [second meteor tutorial](http://meteortips.com/second-meteor-tutorial/user-accounts/)
 
 ## Project list
 - [Card Layout using CSS Flex](http://codepen.io/weicliu/pen/oxZVVO)
