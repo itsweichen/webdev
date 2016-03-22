@@ -107,23 +107,23 @@ the router will look for a template with the same name as the route by default.
 - **Controllers**: Sometimes, you'll realize that a lot of your templates are reusing the same parameters. Rather than duplicate your code, you can let all these routes inherit from a single routing controller which will contain all the routing logic.
 
 - Routing Templates (p.74)
-	- Create a layout template with `{ { &gt; yield } }` 
+	- Create a layout template with `{{&gt; yield}}` 
 	- Pass the target template by `name: template name` in `router.js`
 - Named Routes (p.75)
-	- `{ { pathFor 'postsList' } }` in template HTML
+	- `{{pathFor 'postsList'}}` in template HTML
 - Waiting on Data (p.76)
 	- A loading page supported by Iron Router
 	- `waitOn()`
-	- loading template:  `spin` package with `{ { &gt; spinner } }`
+	- loading template:  `spin` package with `{{&gt; spinner}}`
 - Routing To A Specific Post (p.78)
 	- `path: posts/:_id`
 	- `data` field to pass in corresponding data
 - Using a Dynamic Named Route Helper
-	- `{ { pathFor 'postPage' } }`
+	- `{{pathFor 'postPage'}}`
 	- pass the `_id` by `this` in the template
-	- or specify the id: `{ { pathFor 'postPage' someOtherPost } }`
+	- or specify the id: `{{pathFor 'postPage' someOtherPost}}`
 
-> HTML5 pushState `what???` (p.83)
+> HTML5 pushState [what???] (p.83)
 
 ## Session
 To store some ephemeral state that is only relevant to the current user's version of the application. 
