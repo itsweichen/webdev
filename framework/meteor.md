@@ -122,7 +122,7 @@ the router will look for a template with the same name as the route by default.
 	- pass the `_id` by `this` in the template
 	- or specify the id: `{{pathFor 'postPage' someOtherPost}}`
 
-> HTML5 pushState [what???] (p.83)
+> HTML5 pushState `what???` (p.83)
 
 ## Session
 To store some ephemeral state that is only relevant to the current user's version of the application. 
