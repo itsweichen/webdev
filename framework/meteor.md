@@ -18,15 +18,12 @@ Directories
 The value of `this` (p.31)
 > JS: a.hostname // return host name
 
---------------
 ## Git & Github
 
 - `git checkout [commit/commit-tag]` to see history.
 - Github file 
 	- "history" (see commits to a certain file)
 	- "blame" (who modify what line by line)
-
---------------
 
 ## Collection
 - shared between all users
