@@ -28,3 +28,5 @@
 
 **We will switch to React & FlowRouter later, for *external validity*.**
 
+## Decision
+- Center items in navbar (**review CSS rules!**)
