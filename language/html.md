@@ -105,3 +105,5 @@ HTML widgets
 
 * `<button>`
   * can use `form*` attributes to override corresponding form attributes when it's a submit button
+
+> See [The native form widgets](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets) for details.
