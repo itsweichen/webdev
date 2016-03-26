@@ -97,7 +97,7 @@ HTML widgets
 * `<select>` builds select boxes
   * `<option>`, which can be grouped inside `<optgroup>`
 
-[`DEMO AT CODEPEN`](http://codepen.io/weicliu/pen/oxwwGq)
+[`[DEMO AT CODEPEN]`](http://codepen.io/weicliu/pen/oxwwGq)
 
 * `<datalist>`:extends the existing widgets by providing preset values for given widgets.
 
