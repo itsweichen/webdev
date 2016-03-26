@@ -30,15 +30,7 @@
 <html>
 	<head> <!-- metadata -->
 		<title>document's title</title> <!-- appears in the browser's title bar & search result 
-        <!--
-        Other optional tags:
-          * base
-          * link
-          * meta
-          * object
-          * script
-          * style
-        -->
+        <!-- Other optional tags: * base * link * meta * object * script * style -->
 	</head>
 
 <body>
