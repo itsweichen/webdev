@@ -58,4 +58,35 @@
 
 ## Element
 * `table` ([ref](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table))
-* [HTML forms guide](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms)
+
+### Form
+> [HTML forms guide](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms)
+> * [My first HTML form](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form)
+
+* `for` attribute on `<label>`: a formal way to link a label to a widget; should equal to `id` of corresponding widget -> click the label to activate its widget (especially for radio buttons and checkboxes)
+  * a widget can be nested inside
+
+* `type` attribute for `<input>` is important
+
+* `<input />` is an auto-closing element which use `value` attribute to define default value
+  *  `<textarea></textarea>` is not; just put default value between the two tags
+
+* `<button>` has three type: `submit`, `reset`["From a UX point of view, this is considered bad practice."], `button`
+  * can also use `<input>` to produce a button. (The main difference with the `<button>` element is that the `<input>` element only allows plain text as its label whereas the `<button>` element allows full HTML content as its label. `??`)
+
+> * [How to structure an HTML form](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form) -> for usability and accessibility.
+
+* Attributes for `<form>` element
+  * all of them optional
+* `<fieldset>`: create groups of widgets that share the same purpose
+  * can be labeled with a `legend` element
+
+* `<output>` element: store the output of a calculation.
+  * `<for>` indicating that those elements contribute input values to (or otherwise affect) the calculation.
+
+HTML widgets
+* `<input>` can be almost anything setting its `type` attribute
+  * Single line text fields: `text`, `email`, `password`, `search`, `tel`, `url`
+  * Controls without text input: `checkbox`, `color`, `file`, `hidden`, `number`, `radio`, `range`
+  * Time and date controls (Not supported in some browser)
+  * Buttons: `button`, `image`(A graphical submit button, with `src` and `alt`), `reset`, `submit`
