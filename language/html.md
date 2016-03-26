@@ -12,7 +12,7 @@
   <input required>
   ```
 
-* **Named character refernces** - For characters that have special meaning in HTML
+* **Named character references** - For characters that have special meaning in HTML
   * `&gt;` = `>`
   * `&lt;` = `<`
   * `&amp;` = `&` (ampersand)
