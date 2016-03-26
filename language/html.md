@@ -90,3 +90,18 @@ HTML widgets
   * Controls without text input: `checkbox`, `color`, `file`, `hidden`, `number`, `radio`, `range`
   * Time and date controls (Not supported in some browser)
   * Buttons: `button`, `image`(A graphical submit button, with `src` and `alt`), `reset`, `submit`
+
+* `<textarea>` allows multiple lines
+  * attributes: `cols`, `rows`, `wrap`
+
+* `<select>` builds select boxes
+  * `<option>`, which can be grouped inside `<optgroup>`
+
+[`DEMO AT CODEPEN`](http://codepen.io/weicliu/pen/oxwwGq)
+
+* `<datalist>`:extends the existing widgets by providing preset values for given widgets.
+
+* `<meter>` and `<progress>`: two elements are a way to graphically represent a given numeric value.
+
+* `<button>`
+  * can use `form*` attributes to override corresponding form attributes when it's a submit button
