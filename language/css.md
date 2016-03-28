@@ -24,10 +24,13 @@ selector {
 ```
 * Class selectors
 * ID selectors
+
+
 * Attribute selectors
   * use square brackets and put attr name inside
   * optionally followed by a matching operator and a value
   * `i` indicates it's case-insensitive (not fully supported by browsers)
+
 ```
 [diabled] [type='button']
 [class~=key]
@@ -40,3 +43,4 @@ img[src$=".png"]
 
 * Pseudo-classes selectors
   * `:hover`, `:focus`, `:nth-child`, `:checked`, etc.
+
