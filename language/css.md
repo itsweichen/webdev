@@ -16,6 +16,8 @@ How it works
 
 
 ## [Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
+
+### Basics
 ```
 selector { 
   //declaration inside
@@ -42,5 +44,50 @@ img[src$=".png"] /* ends with */
 > More on [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
 
 * Pseudo-classes selectors
-  * `:hover`, `:focus`, `:nth-child`, `:checked`, etc.
+  * `:hover`, `:focus`, `:visited`,`:nth-child`, `:checked`, etc.
+
+### Precedence
+
+Conflicting rules
+
+1. more specific (eg. #id > .class/pseudo-classes/attribute > tag/pseudo-element)
+2. equally specific: later in the stylesheet
+
+### Selectors based on relationships
+
+Rules applied to `E`
+
+* `A E` - descendant
+  * Note that `A, E` does not represent any relationship, just applying the same rules to them (Grouped selectors)
+* `A > E` - direct descendant
+* `E:first-child` - first child of its parent
+* `B + E` - next sibling of B (next child of the same parent)
+
+
+## [Text styles](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Text_styles)
+
+> Use [`font`](https://developer.mozilla.org/en-US/docs/Web/CSS/font) to set several properties at once (but I think it's not very readable)
+
+* `font-family`
+* `font-size`
+* `line-height`
+* `text-decoration`
+* `font-style`
+* `font-weight`
+* `font-variant`
+* Turn off: `normal` or `inherit`
+
+## [Color](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Color)
+
+* use keywords
+* `#red-green-blue`
+  * `#fff` white
+  * `#000` black
+* `#ff0000` (= `#0f0`)
+* `rgb(128, 0, 0)` - decimal RGB values ranging from 0 - 255
+
+
+
+
+
 
