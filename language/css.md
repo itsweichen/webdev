@@ -87,6 +87,7 @@ Rules applied to `E`
 * `rgb(128, 0, 0)` - decimal RGB values ranging from 0 - 255
 
 
+## [Content](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Content)
 
 
 
