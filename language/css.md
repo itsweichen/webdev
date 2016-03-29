@@ -89,6 +89,25 @@ Rules applied to `E`
 
 ## [Content](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Content)
 
+### Text content
+
+Add `::before` or `::after` to the selector to insert text content before or after an element.
+
+### Image content
+
+Specify the URL of an image file in the value of the [content](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property.
+
+```css
+/* This rule adds a space and an icon after every link that has the class glossary */
+a.glossary:after {content: " " url("../images/glossary-icon.gif");}
+```
+
+Use `backgroud: url("...")` to add an image as an element's background.
+
+## [Lists](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Lists)
+
+
+
 
 
 
