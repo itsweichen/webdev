@@ -31,13 +31,13 @@ selector {
   * optionally followed by a matching operator and a value
   * `i` indicates it's case-insensitive (not fully supported by browsers)
 
-```
+```css
 [diabled] [type='button']
-[class~=key]
-[lang|=es]
-[title*="example"]
-a[href^="https://"]
-img[src$=".png"]
+[class~=key] /* one of the classes is exactly key (same as .key) */
+[lang|=es] /* exactly or starts with es- */
+[title*="example"] /* includes as a substring */
+a[href^="https://"] /* starts with */
+img[src$=".png"] /* ends with */
 ```
 > More on [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
 
