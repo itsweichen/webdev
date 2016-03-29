@@ -91,7 +91,7 @@ Rules applied to `E`
 
 **Text content**
 
-Add `::before` or `::after` to the selector to insert text content before or after an element.
+Add `::before` or `::after` to the selector to insert text content before or after an element. [DEMO](http://codepen.io/weicliu/pen/GZvRLL)
 
 **Image content**
 
