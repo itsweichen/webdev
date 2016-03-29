@@ -89,11 +89,11 @@ Rules applied to `E`
 
 ## [Content](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Content)
 
-### Text content
+**Text content**
 
 Add `::before` or `::after` to the selector to insert text content before or after an element.
 
-### Image content
+**Image content**
 
 Specify the URL of an image file in the value of the [content](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property.
 
@@ -106,8 +106,12 @@ Use `backgroud: url("...")` to add an image as an element's background.
 
 ## [Lists](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Lists)
 
+**Unordered lists**
 
+`list-style: disc/circle/square`
 
+**ordered list**
 
+`list-style: decimal/lower,upper-roman/lower,upper-latin`
 
 
