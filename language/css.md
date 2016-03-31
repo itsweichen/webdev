@@ -147,9 +147,9 @@ Use `backgroud: url("...")` to add an image as an element's background.
 
 * [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float) forces an element to the left or right until it touches the edge of its container *or another floated element*.
 
-![Float example](https://developer.mozilla.org/@api/deki/files/4927/=floats.png)
+<img src="https://developer.mozilla.org/@api/deki/files/4927/=floats.png" width="300">
 
-Clearing floats
+**Clearing floats**
 
 * If the text is not long enough, use **`clear`** property to align, say a new heading, to the left instead of making it between the red boxes.
 * Another way if there are problems with the `clear` (eg. the heading has siblings the should also float): use `overflow: hiddle` to the parent element to cause it to expand to contain them.
