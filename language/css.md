@@ -116,9 +116,88 @@ Use `backgroud: url("...")` to add an image as an element's background.
 
 ## [Boxes](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Boxes)
 
+**Color**
+
+* color(padding) === color(element's background)
+* color(margin) === transparent
+
+**border**
+
+* set to `none` or `hidden` to remove
+
+**width**
+
+* one: all around
+* two: (top & bottom, left & right)
+* four: (top, right, bottom, left)
+
+## [Layout](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Layout)
+
+**Size unit**
+
+* better to use a percentage or em
+* em: size of the current font (the width of a letter m)
+
+**Text layout**
+
+* `text-align: left/right/center/justify`
+* `text-indent`
+
+**Floats**
+
+* [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float) forces an element to the left or right until it touches the edge of its container *or another floated element*.
+
+![Float example](https://developer.mozilla.org/@api/deki/files/4927/=floats.png)
+
+Clearing floats
+
+* If the text is not long enough, use **`clear`** property to align, say a new heading, to the left instead of making it between the red boxes.
+* Another way if there are problems with the `clear` (eg. the heading has siblings the should also float): use `overflow: hiddle` to the parent element to cause it to expand to contain them.
+
+**Positioning**
+
+> These are advanced properties. It is possible to use them in simple ways—that is why they are mentioned in this basic tutorial. But using them for complex layouts can be difficult.
+
+* `relative`: shifted *relative to its normal position*. Sometimes can also be achieved by `margin`
+* `fixed`: relative to the document window
+* `absolute`: fixed relative to a parent element (Only a parent that is itself positioned with relative, fixed or absolute will do)
+* `static`: default. use this value to turn positiong off.
+
+## [tables](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables)
+
+* See you later :)
 
 
+## [media](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Media)
 
+Present a document differently in different media (eg. screen, print, projection, all).
 
+**User interfaces**
 
+For devices that support a UI.
 
+* `E:hover`
+* `E:focus` (keyboard focus)
+* `E:active` (involved in the current user action)
+* `E:link` (link not visited recently)
+* `E:visited`
+
+**`Curser` property**
+
+* `pointer` (indicating a link. can be used for an element that is a link without using `<a>`)
+* `wait` (cannot accept input)
+* `progress` (is working, but can still accept input)
+* `default`
+
+**`outline`**
+
+Use to indicate keyboard focus. Similar to `border`, but cannot specify individual sides.
+
+```
+:link:hover { outline: 1px solid #000; }
+```
+
+**use attribute**
+
+* `disable` or `readonly`
+* selector: `.green-button[disabled] `
