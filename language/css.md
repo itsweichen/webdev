@@ -201,3 +201,9 @@ Use to indicate keyboard focus. Similar to `border`, but cannot specify individu
 
 * `disable` or `readonly`
 * selector: `.green-button[disabled] `
+
+
+## Reminder
+
+* [Block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
+* `text-decoration`: draw across descendant elements. (not possible to diable even use `none` fot its descendent elements).
