@@ -106,10 +106,6 @@ Boolean
 * Object wrapper for a boolean value
 * DO NOT USE IT FOR CONDITIONAL STATEMENT - Any object whose value is not `undefined` or `null` evaluates to `true`.
 
-Integers
-
-Floating-point literals
-
 Object literals
 
 * pairs of key-value
@@ -131,3 +127,34 @@ String literals
 
 
 ### Control flow and error handling
+
+**Exception handling**
+
+* `throw`
+* `try...catch`
+
+Utilizing `Error` objects
+
+### Loops and iteraction
+
+**label statement**
+
+* identifier that lets you refer to it elsewhere in your program.
+* can be used to mark a loop and then use `break` or `continue` to indicate which loop (for example, nested loops)
+
+**for...in statement** and **for...of statement**
+
+```javascript
+let arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (let i in arr) {
+   console.log(i); // logs "0", "1", "2", "foo"
+}
+
+for (let i of arr) {
+   console.log(i); // logs "3", "5", "7"
+}
+```
+
+* Better to use `for` loop to iterate over arrays, because `for...in` statement will also return the name of user-defined properties (as they are objects).
