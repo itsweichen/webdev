@@ -1,4 +1,4 @@
-## JavaScript
+## JavaScript cheatsheet
 
 > [Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
@@ -158,3 +158,13 @@ for (let i of arr) {
 ```
 
 * Better to use `for` loop to iterate over arrays, because `for...in` statement will also return the name of user-defined properties (as they are objects).
+
+### Function
+
+* Primitives are passed by *value* while objects are passed by *reference*.
+
+**Function expressions**
+
+
+
+
