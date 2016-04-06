@@ -98,6 +98,35 @@ Converting strings -> numbers
 * RegExp
 * String
 
+Array
 
+* Extra commas (except for the last one) -> an item that is `undefined`
 
+Boolean
+
+* Object wrapper for a boolean value
+* DO NOT USE IT FOR CONDITIONAL STATEMENT - Any object whose value is not `undefined` or `null` evaluates to `true`.
+
+Integers
+
+Floating-point literals
+
+Object literals
+
+* pairs of key-value
+
+```javascript
+var car = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };
+
+console.log(car.manyCars.b); // Jeep
+console.log(car[7]); // Mazda
+```
+
+RegExp
+
+* pattern enclosed between slashes.
+
+String literals
+
+* Can call any methods of the String object on a string literal value - JavaScript auto converts it to a temporary String object.
 
