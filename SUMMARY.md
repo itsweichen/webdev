@@ -4,6 +4,7 @@
 * [Language](language.md)
   * [HTML](language/html.md)
   * [CSS](language/css.md)
+  * [JavaScript](language/javascript_guide.md)
   * [Python](language/python.md)
 * [Framework](framework.md)
    * [Meteor](framework/meteor.md)
