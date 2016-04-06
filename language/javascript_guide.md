@@ -2,7 +2,6 @@
 
 > [Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
-
 ### Intro
 
 * JavaScript vs. ECMAScript
@@ -130,3 +129,5 @@ String literals
 
 * Can call any methods of the String object on a string literal value - JavaScript auto converts it to a temporary String object.
 
+
+### Control flow and error handling
