@@ -38,6 +38,10 @@ Variable scope
 
 Variable hoisting
 
+```
+// 【奇幻语言JavaScript之Variable Hoist】
+```
+
 * can use a var declared later
 * hoisted var will return `undefined` (instead of getting an exception)
   * interpreted as not-initialized
@@ -138,6 +142,10 @@ String literals
 
 Utilizing `Error` objects
 
+**Promise***
+
+* New in ECMAScript 6, allowing you to control the flow of deferred and asynchronous operations.
+
 ### Loops and iteraction
 
 **`label` statement**
@@ -164,9 +172,80 @@ for (let i of arr) {
 
 ### Function
 
-* Primitives are passed by *value* while objects are passed by *reference*.
+* **Primitives are passed by *value* while objects are passed by *reference*.**
 
 **Function expressions**
+
+```javascript
+var square = function(number) {return number * number}
+var x = square(4)
+```
+
+* anonymous
+* can also add a name in order to call itself
+* convenient when passing a function as an argument to another function
+
+```javascript
+function map(f, a){
+  var result = [], i;
+  for (i=0; i != a.length; i++)
+    result[i] = f(a[i])
+   return result;
+}
+
+map(function(x){return x*x*x}, [0, 1, 2, 5]); // [0, 1, 8, 125]
+```
+
+* can use `Function` constructor to create functions from a string a runtime. (Every function is actually a `Function` object in JavaScript.)
+
+**Calling functions**
+
+* Function declaration can be hoisted.
+
+```javascript
+// 【奇幻语言JavaScript之Function Hoist】
+console.log(square(5));
+/* ... */
+function square(n) { return n*n }
+// log: 25
+// won't work with other syntax like square=function(){}
+```
+
+> More: call function dynamically, or the number of arguments to a function vary... Functions are objects and they have methods. See apply() method.
+
+**Function scope**
+
+* A function can access all variables and functions defined inside the scope in which it is defined.
+
+
+```javascript
+// 【奇幻语言JavaScript之Nested Call】
+function outside(x) {
+  function inside(y) {
+    return x + y;
+  }
+  return inside;
+}
+
+fn_inside = outside(3); // Think of it like: give me a function that adds 3 to whatever you give it
+result = fn_inside(5); // returns 8
+
+result1 = outside(3)(5); // returns 8
+```
+
+
+### Indexed collections
+
+
+
+
+
+```javascript
+// 【奇幻语言JavaScript之Array】
+a = []; // [], length=0
+a[2] = 1; // [undefined, undefined, 1], length=3
+a.length = 2; // [undefined, undefined], length=2
+```
 
 
 
