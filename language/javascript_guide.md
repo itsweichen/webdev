@@ -18,8 +18,10 @@
 Three ways
 
 * `var`
-  * simply assigning it a value declares a global variable. (x)
-* `let` - block scope local variable
+  * function scope
+  * simply assigning it a value declares a global variable. (not a very good way)
+* `let`
+  * block scope local variable
 * `const`
 
 Evaluating variables
@@ -49,7 +51,7 @@ Global Variable
 Constant
 
 * `const prefix = '212';`
-* Read-only; but object attributes can be changed.
+* Read-only. (but object attributes can be changed)
 
 ```javascript
 const MY_OBJECT = {"key": "value"};
@@ -60,13 +62,14 @@ MY_OBJECT.key = "otherValue";
 
 Data types
 
-* Six that are primitives: Boolean, null, undefined, Number, String, Symbol (new in ECMAScript 6)
-* OBject
+* Six that are primitives
+  * Boolean, null, undefined, Number, String, Symbol (new in ECMAScript 6)
+* Object
 
 Auto conversion
 
 * Dynamically typed language
-* `+`: numerical -> string () // not in python
+* string `+` numerical -> string (not in python)
 * but others operators won't
 
 ```javascript
@@ -78,12 +81,12 @@ Converting strings -> numbers
 
 * Methods
   * `parseInt()`
-    * Best practice: always include the radix parameter `parseInt("15*3", 10);`
+    * BEST PRACTICE: always include the radix parameter `parseInt("15*3", 10);`
   * `parseFloat()`
 * Use `+`
 * A stricter way to parse int (use regexp)
 
-> [The differences](http://stackoverflow.com/questions/175739/is-there-a-built-in-way-in-javascript-to-check-if-a-string-is-a-valid-number)
+  > [The differences](http://stackoverflow.com/questions/175739/is-there-a-built-in-way-in-javascript-to-check-if-a-string-is-a-valid-number)
 
 **Literals**
 
@@ -137,7 +140,7 @@ Utilizing `Error` objects
 
 ### Loops and iteraction
 
-**label statement**
+**`label` statement**
 
 * identifier that lets you refer to it elsewhere in your program.
 * can be used to mark a loop and then use `break` or `continue` to indicate which loop (for example, nested loops)
