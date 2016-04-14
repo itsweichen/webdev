@@ -247,6 +247,9 @@ a[2] = 1; // [undefined, undefined, 1], length=3
 a.length = 2; // [undefined, undefined], length=2
 ```
 
+### Keyed collections
 
+* `Map` object introduced in ECMAScript 6.
+  * Comparisons between using `Map` and `Object`
 
 
