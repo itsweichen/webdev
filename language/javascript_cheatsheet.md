@@ -236,9 +236,29 @@ result1 = outside(3)(5); // returns 8
 
 ### Indexed collections
 
+**`Array` object**
 
+Creating an array
 
+```javascript
+var arr = new Array(ele0, ele1, ele2, ...);
+var arr = Array(ele0, ele1, ele2, ...);
+var arr = [ele0, ele1, ele2, ...];
+```
 
+Create an array with a length
+
+```javascript
+// with non-zero length, with items undefined
+var arr = new Array(arrayLength);
+var arr = Array(arrayLength);
+
+// This has exactly the same effect
+var arr = [];
+arr.length = arrayLength;
+```
+
+This can be done very loosely.
 
 ```javascript
 // 【奇幻语言JavaScript之Array】
@@ -247,7 +267,41 @@ a[2] = 1; // [undefined, undefined, 1], length=3
 a.length = 2; // [undefined, undefined], length=2
 ```
 
+`forEach()` to iterate over an array
+
+```javascript
+var colors = ['red', 'green', 'blue'];
+colors.forEach(function(color) {
+  console.log(color);
+});
+```
+
+Array methods
+
+```javascript
+concat(ele1, ele2 or [eles]) // join two arrays
+join(deliminator = ',') // elements of an array -> string
+push()
+pop()
+shift() // remmove the first element and returns that element
+unshift(ele1, ele2) // adds elements to the front and returns the new length of the array
+slice(start, upto)
+splice(index, count, addEle1, addEle2, ...) // remove elements from an array and (optionally) replaces them
+reverse()
+sort()
+indexOf(searchEle[, fromIndex])
+lastIndexOf(searchEle[, from Index]) // starts at the end and search backwards
+forEach(callback[, thisObject])
+map()
+filter()
+every(callback[, thisObject]) // returns true if callback returns true for every item in the array
+```
+
+
+
 ### Keyed collections
+
+**Maps**
 
 * `Map` object introduced in ECMAScript 6.
   * Comparisons between using `Map` and `Object`
@@ -255,5 +309,12 @@ a.length = 2; // [undefined, undefined], length=2
 * `WeakMap`
   * Keys are objects only
   * "weak": target of garbage collection if there is no reference to the key object any more
+
+**Sets**
+
+* `Set` object
+  * can iterate in insertion order
+  * create an array from a Set using `Array.from` or [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+* `WeakSet`
 
 
