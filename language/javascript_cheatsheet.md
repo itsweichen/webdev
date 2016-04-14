@@ -251,5 +251,9 @@ a.length = 2; // [undefined, undefined], length=2
 
 * `Map` object introduced in ECMAScript 6.
   * Comparisons between using `Map` and `Object`
+  * Keys of an object are `Strings` and they can be of any value for `Map`
+* `WeakMap`
+  * Keys are objects only
+  * "weak": target of garbage collection if there is no reference to the key object any more
 
 
