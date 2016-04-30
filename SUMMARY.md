@@ -10,4 +10,5 @@
    * [Meteor](framework/meteor.md)
 * [Projects](projects.md)
    * [ConsensUs](projects/consensus.md)
+   * [ConsensUs chat](projects/consensus_chat.md)
 
