@@ -15,3 +15,8 @@ Minimongo
 [`Template.registerHelper()`](http://docs.meteor.com/#/full/template_registerhelper)
 
 * define a helper function which can be used by all templates.
+
+JavaScript
+
+* `typeof` *operand*
+* 
